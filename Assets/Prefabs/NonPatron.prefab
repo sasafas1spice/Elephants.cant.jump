@@ -155,5 +155,6 @@ MonoBehaviour:
   pointB: {fileID: 3017889822221685026, guid: 62728a9aca8dc244eb8f90ad6c1ff36d, type: 3}
   boomSprite: {fileID: 21300000, guid: 65b98fd9a50e9864aaf11fa4b10ed3ae, type: 3}
   grave: {fileID: 21300000, guid: bfb2a93f8e346ab4286d8396ed2eda72, type: 3}
+  points: {fileID: 4304368167968616116, guid: 2c7d7b2171a7041dda986d05a7b780fb, type: 3}
   speed: 0.5
   canMove: 0
