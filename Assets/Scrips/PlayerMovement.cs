@@ -49,4 +49,15 @@ public class MoveBetweenPoints : MonoBehaviour
             targetPosition = pointB.transform.position;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other) // For 3D
+    {
+        // Check the tag of the other collider that entered the trigger zone
+        if (other.CompareTag("Finish"))
+        {
+            canMove = false;
+
+            Destroy(this.gameObject);
+        }
+    }
 }

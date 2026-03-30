@@ -107,7 +107,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -182,3 +182,4 @@ MonoBehaviour:
   pointA: {fileID: 3520149013461964328, guid: 4d631e614860f554885a8b056213301f, type: 3}
   pointB: {fileID: 5472943108209755050, guid: 4f2a70718b64a2a4e8f22175351a99c2, type: 3}
   speed: 1
+  canMove: 1
