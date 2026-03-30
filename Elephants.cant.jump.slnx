@@ -1,7 +1,6 @@
 ﻿<Solution>
-  <Project Path="Sasafasspice.Toolbox.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="Sasafasspice.Toolbox.Tests.csproj" />
-  <Project Path="Sasafasspice.Toolbox.Editor.csproj" />
-  <Project Path="Sasafasspice.Toolbox.Editor.Tests.csproj" />
+  <Project Path="com.sy.toolbox.csproj" />
+  <Project Path="Sasafasspice.Toolbox1.Editor.csproj" />
+  <Project Path="Sasafasspice.Toolbox1.Tests.csproj" />
+  <Project Path="Sasafasspice.Toolbox1.Editor.Tests.csproj" />
 </Solution>
