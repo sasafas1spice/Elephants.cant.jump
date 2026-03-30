@@ -1,0 +1,3 @@
+[submodule "Packages/com.sy.toolbox"]
+	path = Packages/com.sy.toolbox
+	url = git@bitbucket.org:btkgamedesign/com.sy.toolbox.git
