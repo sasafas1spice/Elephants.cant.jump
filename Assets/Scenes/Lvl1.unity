@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 433119581}
   m_Layer: 0
   m_Name: 'People Spawner '
-  m_TagString: Player
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 1663411210}
   m_Layer: 0
   m_Name: Elephant Spawner
-  m_TagString: Player
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1086,6 +1086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elephant PointB
       objectReference: {fileID: 0}
+    - target: {fileID: 5472943108209755050, guid: 4f2a70718b64a2a4e8f22175351a99c2, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1142,6 +1146,10 @@ PrefabInstance:
     - target: {fileID: 3520149013461964328, guid: 4d631e614860f554885a8b056213301f, type: 3}
       propertyPath: m_Name
       value: Elephant PointA
+      objectReference: {fileID: 0}
+    - target: {fileID: 3520149013461964328, guid: 4d631e614860f554885a8b056213301f, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

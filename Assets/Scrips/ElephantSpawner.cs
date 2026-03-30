@@ -12,10 +12,11 @@ public GameObject Elephant;
     
     void Update()
     {
-        if (false)
+        GameObject[] Players = GameObject.FindGameObjectsWithTag("Player");
+        int PlayersCount = Players.Length;
+        if (PlayersCount == 0)
         {
-            
-            Instantiate(Elephant, Vector3.zero, Quaternion.identity);
+            Instantiate(Elephant, transform.position, transform.rotation); 
         }
     }
 }
