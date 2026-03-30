@@ -1,0 +1,14 @@
+{
+    "name": "Sasafasspice.Toolbox.Editor.Tests",
+    "references": [
+        "Sasafasspice.Toolbox.Editor",
+        "Sasafasspice.Toolbox"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

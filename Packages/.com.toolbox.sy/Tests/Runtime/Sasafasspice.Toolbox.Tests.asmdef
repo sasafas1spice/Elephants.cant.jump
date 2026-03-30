@@ -1,0 +1,11 @@
+{
+    "name": "Sasafasspice.Toolbox.Tests",
+    "references": [
+        "Sasafasspice.Toolbox"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

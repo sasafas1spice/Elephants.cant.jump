@@ -1,0 +1,10 @@
+{
+    "name": "Sasafasspice.Toolbox.Editor",
+    "references": [
+      "Sasafasspice.Toolbox"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
