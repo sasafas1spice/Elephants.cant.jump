@@ -1015,13 +1015,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'People PointB '
       objectReference: {fileID: 0}
+    - target: {fileID: 3017889822221685026, guid: 62728a9aca8dc244eb8f90ad6c1ff36d, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 8001180084871726689, guid: 62728a9aca8dc244eb8f90ad6c1ff36d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.311
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 8001180084871726689, guid: 62728a9aca8dc244eb8f90ad6c1ff36d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.564
+      value: -2.48
       objectReference: {fileID: 0}
     - target: {fileID: 8001180084871726689, guid: 62728a9aca8dc244eb8f90ad6c1ff36d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1072,13 +1076,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: People PointA
       objectReference: {fileID: 0}
+    - target: {fileID: 4642481429391557506, guid: e306959c0bc7135478a96755f676c756, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 8059197424353143405, guid: e306959c0bc7135478a96755f676c756, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.524
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8059197424353143405, guid: e306959c0bc7135478a96755f676c756, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.626
+      value: -3.57
       objectReference: {fileID: 0}
     - target: {fileID: 8059197424353143405, guid: e306959c0bc7135478a96755f676c756, type: 3}
       propertyPath: m_LocalPosition.z

@@ -25,9 +25,8 @@ public class PeopleMovement : MonoBehaviour
         {
             if (targetPosition == pointA.transform.position) {
                 targetPosition = pointB.transform.position;
-            }
-             if (targetPosition == pointB.transform.position) {
-                Destroy(this);
+            } else if (targetPosition == pointB.transform.position) {
+                Destroy(this.gameObject);
             }
         }
     }
