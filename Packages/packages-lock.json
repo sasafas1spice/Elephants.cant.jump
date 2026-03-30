@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "com.sasafas_spice.toolbox": {
-      "version": "file:.com.toolbox.sy",
+    "com.sasafas_spice.toolbox1": {
+      "version": "file:com.sy.toolbox",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
