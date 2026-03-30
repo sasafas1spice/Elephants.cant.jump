@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NonPatron
   - Patron
+  - Points
   layers:
   - Default
   - TransparentFX
