@@ -1,18 +1,18 @@
 using UnityEngine;
 
-public class MoveBetweenPoints : MonoBehaviour
+public class PeopleMovement : MonoBehaviour
 {
     // Assign these points in the Unity Inspector by dragging GameObjects into the fields
-    public Transform pointA;
-    public Transform pointB;
+    public GameObject pointA;
+    public GameObject pointB;
     public float speed = 2.0f;
 
     private Vector3 targetPosition;
 
     void Start()
     {
-        // Start by moving towards point B
-        targetPosition = pointB.position;
+        // moving towards point A
+        targetPosition = pointA.transform.position;
     }
 
     void Update()
@@ -23,14 +23,11 @@ public class MoveBetweenPoints : MonoBehaviour
         // Check if the object has reached the target position
         if (transform.position == targetPosition)
         {
-            // Switch the target to the other point to move back and forth indefinitely
-            if (targetPosition == pointB.position)
-            {
-                targetPosition = pointA.position;
+            if (targetPosition == pointA.transform.position) {
+                targetPosition = pointB.transform.position;
             }
-            else
-            {
-                targetPosition = pointB.position;
+             if (targetPosition == pointB.transform.position) {
+                Destroy(this);
             }
         }
     }

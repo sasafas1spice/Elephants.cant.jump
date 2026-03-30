@@ -12,7 +12,7 @@ public GameObject Elephant;
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (false)
         {
             
             Instantiate(Elephant, Vector3.zero, Quaternion.identity);
