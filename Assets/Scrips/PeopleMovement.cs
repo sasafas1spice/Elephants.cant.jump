@@ -61,11 +61,11 @@ public class PeopleMovement : MonoBehaviour
     IEnumerator fadeAwayAndDie()
     {
          // Wait for 3 seconds of game time
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         this.gameObject.GetComponent<SpriteRenderer>().sprite = grave;
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         Destroy(this.gameObject);
     }
