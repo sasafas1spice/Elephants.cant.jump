@@ -7,6 +7,8 @@ public class PeopleMovement : MonoBehaviour
     // Assign these points in the Unity Inspector by dragging GameObjects into the fields
     public GameObject pointA;
     public GameObject pointB;
+    public GameObject losingScreen;
+    public GameObject timer;
     public Sprite boomSprite;
     public Sprite grave;
 
@@ -24,6 +26,11 @@ public class PeopleMovement : MonoBehaviour
         targetPosition = pointA.transform.position;        
         GameObject[] pointsCounters = GameObject.FindGameObjectsWithTag("Points");
         points = pointsCounters[0].GetComponent<TextMeshProUGUI>();
+        GameObject[] timersCounters = GameObject.FindGameObjectsWithTag("Timer");
+        timer = timersCounters[0];
+        GameObject[] losingScreens = GameObject.FindGameObjectsWithTag("DeathCanvas");
+        losingScreen = losingScreens[0];
+        Time.timeScale = 1f; 
     }
 
     void Update()
@@ -68,7 +75,9 @@ public class PeopleMovement : MonoBehaviour
 
                 if (oldPoints < 0)
                 {
-                    // lose
+                    Time.timeScale = 0f; 
+                    timer.GetComponent<Timer>().isRunning = false;
+                    losingScreen.GetComponent<Canvas>().enabled = true;
                 }
 
                 points.SetText(oldPoints.ToString());

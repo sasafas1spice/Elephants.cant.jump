@@ -9,6 +9,8 @@ TagManager:
   - Points
   - StartCanvas
   - MainMenuCanvas
+  - DeathCanvas
+  - Timer
   layers:
   - Default
   - TransparentFX

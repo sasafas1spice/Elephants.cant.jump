@@ -481,9 +481,9 @@ GameObject:
   - component: {fileID: 167369418}
   - component: {fileID: 167369417}
   - component: {fileID: 167369416}
-  - component: {fileID: 167369415}
+  - component: {fileID: 167369419}
   m_Layer: 5
-  m_Name: Start
+  m_Name: Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,18 +509,6 @@ RectTransform:
   m_AnchoredPosition: {x: -283, y: -186.48}
   m_SizeDelta: {x: 178.4152, y: 48.987}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &167369415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167369413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a76f1728821594a58a7641ab2ce3b8c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: com.sy.toolbox::StartScript
 --- !u!114 &167369416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,8 +553,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167369415}
-        m_TargetAssemblyTypeName: StartScript, com.sy.toolbox
+      - m_Target: {fileID: 167369419}
+        m_TargetAssemblyTypeName: BackScript, com.sy.toolbox
         m_MethodName: goToMainMenu
         m_Mode: 1
         m_Arguments:
@@ -615,6 +603,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167369413}
   m_CullTransparentMesh: 1
+--- !u!114 &167369419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167369413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2e650947fb94368919db52000a69f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.sy.toolbox::BackScript
 --- !u!1 &173802413
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,9 +888,10 @@ GameObject:
   - component: {fileID: 371027684}
   - component: {fileID: 371027686}
   - component: {fileID: 371027685}
+  - component: {fileID: 371027687}
   m_Layer: 5
   m_Name: 0
-  m_TagString: Points
+  m_TagString: Timer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1014,6 +1015,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371027683}
   m_CullTransparentMesh: 1
+--- !u!114 &371027687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371027683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10c83b2377e14c07baa4a4b1a15fcbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.sy.toolbox::Timer
+  timerText: {fileID: 371027685}
+  isRunning: 1
 --- !u!1 &408617383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,11 +1255,11 @@ GameObject:
   - component: {fileID: 475915193}
   m_Layer: 5
   m_Name: You Died
-  m_TagString: Untagged
+  m_TagString: DeathCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &475915193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1292,7 +1307,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475915192}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -1432,7 +1447,7 @@ GameObject:
   - component: {fileID: 531508400}
   - component: {fileID: 531508404}
   - component: {fileID: 531508403}
-  - component: {fileID: 531508402}
+  - component: {fileID: 531508405}
   - component: {fileID: 531508401}
   m_Layer: 5
   m_Name: Main Menu
@@ -1505,9 +1520,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 531508402}
-        m_TargetAssemblyTypeName: PlayScript, com.sy.toolbox
-        m_MethodName: playGame
+      - m_Target: {fileID: 531508405}
+        m_TargetAssemblyTypeName: BackScript, com.sy.toolbox
+        m_MethodName: goToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1517,18 +1532,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &531508402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531508399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7c4b30020294b8c8451ba3342c3d9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: com.sy.toolbox::PlayScript
 --- !u!114 &531508403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1567,6 +1570,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531508399}
   m_CullTransparentMesh: 1
+--- !u!114 &531508405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531508399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2e650947fb94368919db52000a69f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.sy.toolbox::BackScript
 --- !u!1 &581430488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,7 +1671,7 @@ GameObject:
   - component: {fileID: 604586755}
   - component: {fileID: 604586754}
   - component: {fileID: 604586753}
-  - component: {fileID: 604586752}
+  - component: {fileID: 604586756}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -1684,18 +1699,6 @@ RectTransform:
   m_AnchoredPosition: {x: 657.8768, y: -425.25714}
   m_SizeDelta: {x: 160, y: 41.9531}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &604586752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604586750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e0853d649c9e47d283da5b77705fac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: com.sy.toolbox::ExitScript
 --- !u!114 &604586753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1740,9 +1743,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 604586752}
-        m_TargetAssemblyTypeName: ExitScript, com.sy.toolbox
-        m_MethodName: exitGame
+      - m_Target: {fileID: 604586756}
+        m_TargetAssemblyTypeName: PauseScript, com.sy.toolbox
+        m_MethodName: TriggerPause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1790,6 +1793,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604586750}
   m_CullTransparentMesh: 1
+--- !u!114 &604586756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604586750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77992eaac969d4748a60d500dc87f540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.sy.toolbox::PauseScript
+  buttonText: {fileID: 1136595725}
+  paused: 0
 --- !u!1 &635154986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,7 +2263,7 @@ GameObject:
   - component: {fileID: 870872499}
   - component: {fileID: 870872498}
   m_Layer: 5
-  m_Name: Play
+  m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
