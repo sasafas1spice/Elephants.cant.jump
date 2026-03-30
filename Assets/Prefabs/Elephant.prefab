@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5164171250872439407}
   - component: {fileID: 5053274646693060298}
   - component: {fileID: 6792345886610217668}
+  - component: {fileID: 8267664688301882115}
   m_Layer: 0
   m_Name: Elephant
   m_TagString: Player
@@ -154,7 +155,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -166,3 +167,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8267664688301882115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4447337829579428805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5d0b69f4d7be24bb595b79674b8b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveBetweenPoints
+  pointA: {fileID: 3520149013461964328, guid: 4d631e614860f554885a8b056213301f, type: 3}
+  pointB: {fileID: 5472943108209755050, guid: 4f2a70718b64a2a4e8f22175351a99c2, type: 3}
+  speed: 1

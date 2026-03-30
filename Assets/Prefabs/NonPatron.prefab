@@ -181,4 +181,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveBetweenPoints
   pointA: {fileID: 4642481429391557506, guid: e306959c0bc7135478a96755f676c756, type: 3}
   pointB: {fileID: 3017889822221685026, guid: 62728a9aca8dc244eb8f90ad6c1ff36d, type: 3}
-  speed: 2
+  speed: 0.5
